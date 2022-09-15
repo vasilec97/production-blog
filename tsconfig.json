@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    // Подсвечивает все места где не указан тип
+    // Однако это не означает, что теперь вовсе нельзя использовать any.
+    // Это означает, что в подобных ситуациях разработчик долен явно писать any.
+    "noImplicitAny": true,
+    "module": "ESNext",
+    // В какую спецификацию компилируется: для поддержки большинства браузеров
+    "target": "es5",
+    "jsx": "react-jsx",
+    // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
+    "allowJs": true,
+    "moduleResolution": "node",
+    // esModuleInterop позволяет работать с пакетами,  которые используют commonjs как с обычными пакетами с помощью import (require() module.exports) = commonjs
+    // Example:
+    // import Moment from 'moment'
+    // console.log(Moment)
+    // без флага esModuleInterop результат undefined
+    // console.log(Moment)
+    // c флагом результат [object, Object]
+    "esModuleInterop": true,
+    // Если какая-либо библиотека не имеет default exports,
+    // лоадеры вроде ts-loader или babel-loader автоматически создают их вместо импорта
+    // import * as React from 'react'
+    // import React from 'react'
+    "allowSyntheticDefaultImports": true 
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
