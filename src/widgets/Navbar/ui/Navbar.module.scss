@@ -1,0 +1,19 @@
+.Navbar {
+  width: 100vw;
+  min-height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+
+  background-color: var(--inverted-bg-color);
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav > ul {
+  display: flex;
+  gap: 30px;
+}

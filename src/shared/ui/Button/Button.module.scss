@@ -1,0 +1,26 @@
+.Button {
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+}
+
+.Button > svg {
+  animation: open 1s ease-in-out;
+}
+
+.clear {
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
