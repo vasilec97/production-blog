@@ -3,8 +3,7 @@
   height: var(--sidebar-height);
   width: var(--sidebar-width);
   background-color: var(--inverted-bg-color);
-
-  transition: width .3s ease;
+  transition: width 0.3s ease;
 }
 
 .collapsed {
@@ -15,7 +14,6 @@
   width: 100%;
   position: absolute;
   bottom: 30px;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
