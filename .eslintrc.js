@@ -47,6 +47,7 @@ module.exports = {
       markupOnly: true,
     }],
     'max-len': [2, { ignoreComments: true }],
+    'linebreak-style': [1],
   },
   globals: {
     __IS_DEV__: true,

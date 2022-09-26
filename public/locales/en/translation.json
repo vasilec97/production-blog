@@ -2,5 +2,8 @@
   "Язык": "English",
   "Ссылка на главную страницу": "Main",
   "Ссылка на страницу о нас": "About us",
-  "hello world": "hello world"
+  "Страница не найдена": "Page Not Found",
+  "Произошла непредвиденная ошибка": "An unexpected error has occured",
+  "Обновить страницу": "Reload page",
+  "Выбросить ошибку": "throw eror"
 }
