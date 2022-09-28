@@ -1,4 +1,3 @@
-import { useTheme } from 'app/providers/ThemeProviders';
 import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { routeConfig } from 'shared/config/routeConfig/routeConfig';

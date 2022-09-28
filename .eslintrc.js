@@ -45,6 +45,7 @@ module.exports = {
     }],
     'i18next/no-literal-string': [1, {
       markupOnly: true,
+      ignoreAttribute: ['data-testid', 'fallback'],
     }],
     'max-len': [2, { ignoreComments: true }],
     'linebreak-style': [1],
@@ -52,4 +53,12 @@ module.exports = {
   globals: {
     __IS_DEV__: true,
   },
+  overrides: [
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+      },
+    },
+  ],
 };
