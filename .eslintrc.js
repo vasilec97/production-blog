@@ -25,9 +25,10 @@ module.exports = {
     'react/jsx-indent': [2, 2],
     'react/function-component-definition': [2, {
       namedComponents: 'arrow-function',
+      unnamedComponents: 'arrow-function',
     }],
     'react/jsx-filename-extension': [2, {
-      extensions: [',js', 'jsx', '.tsx'],
+      extensions: ['.js', '.jsx', '.tsx'],
     }],
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
@@ -45,19 +46,28 @@ module.exports = {
     }],
     'i18next/no-literal-string': [1, {
       markupOnly: true,
-      ignoreAttribute: ['data-testid', 'fallback'],
+      ignoreAttribute: ['data-testid', 'fallback', 'to'],
     }],
     'max-len': [2, { ignoreComments: true }],
-    'linebreak-style': [1],
+    // 'linebreak-style': [0],
   },
   globals: {
     __IS_DEV__: true,
   },
   overrides: [
     {
-      files: ['**/src/**/*.test.{ts,tsx}'],
+      files: [
+        '**/src/**/*.test.{ts,tsx}',
+        '**/src/**/*.stories.{ts,tsx}',
+      ],
       rules: {
         'i18next/no-literal-string': 'off',
+      },
+    },
+    {
+      files: ['./config/storybook/webpack.config.js'],
+      rules: {
+        'no-param-reassign': 'off',
       },
     },
   ],

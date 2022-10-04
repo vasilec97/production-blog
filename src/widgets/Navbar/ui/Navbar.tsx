@@ -16,12 +16,12 @@ export const Navbar = ({ className }: NavbarProps) => {
         <ul>
           <li>
             <AppLink to="/" theme={AppLinkTheme.SECONDARY}>
-              {t('Ссылка на главную страницу')}
+              {t('Главная')}
             </AppLink>
           </li>
           <li>
             <AppLink to="/about" theme={AppLinkTheme.SECONDARY}>
-              {t('Ссылка на страницу о нас')}
+              {t('О нас')}
             </AppLink>
           </li>
         </ul>
