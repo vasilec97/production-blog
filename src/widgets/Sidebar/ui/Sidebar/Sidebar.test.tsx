@@ -4,7 +4,7 @@ import {
   renderWithTranslation,
 } from 'shared/lib/tests/renderWithTranslation/renderWithTranslation';
 
-describe('Button', () => {
+describe('Sidebar', () => {
   test('Test render ', () => {
     renderWithTranslation(<Sidebar />);
 
