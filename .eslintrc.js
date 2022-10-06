@@ -49,7 +49,7 @@ module.exports = {
       ignoreAttribute: ['data-testid', 'fallback', 'to'],
     }],
     'max-len': [2, { ignoreComments: true }],
-    // 'linebreak-style': [0],
+    'linebreak-style': [0],
   },
   globals: {
     __IS_DEV__: true,
