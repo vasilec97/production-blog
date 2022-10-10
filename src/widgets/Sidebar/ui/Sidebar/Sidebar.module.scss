@@ -3,11 +3,7 @@
   height: var(--sidebar-height);
   width: var(--sidebar-width);
   background-color: var(--inverted-bg-color);
-  transition: width 0.3s ease;
-}
-
-.collapsed {
-  width: var(--sidebar-width-collapsed);
+  transition: width 0.2s ease;
 }
 
 .switchers {
@@ -16,6 +12,70 @@
   bottom: 30px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
+}
+
+.collapse-btn {
+  position: absolute;
+  left: 100%;
+  bottom: 30px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in;
+}
+
+.item:hover {
+  background-color: var(--inverted-bg-color-hover);
+}
+
+.item > a {
+  flex-basis: 100%;
+  padding: 0.6em 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  fill: var(--inverted-primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: var(--font-size-m);
+  line-height: 1;
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+
+  .item > a {
+    align-items: center;
+  }
+
+  .icon {
+    flex-grow: 1;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .switchers {
+    flex-direction: column;
+  }
 }
