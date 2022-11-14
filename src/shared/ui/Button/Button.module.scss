@@ -1,6 +1,6 @@
 .Button {
   color: var(--primary-color);
-  padding: 0.6em 1.2em;
+  padding: .6em 1.2em;
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -10,11 +10,16 @@
   animation: open 1s ease-in-out;
 }
 
-.clear {
+.clear,
+.clear-inverted {
   padding: 0;
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+.clear-inverted {
+  color: var(--inverted-primary-color);
 }
 
 .outline {

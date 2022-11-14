@@ -1,0 +1,43 @@
+.Modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--modal-z-index);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  color: var(--primary-color);
+  max-width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px var(--bg-color);
+  background-color: var(--bg-color);
+  transform: scale(1);
+  opacity: 1;
+  animation: opened .3s ease;
+  transition: transform .2s ease;
+}
+
+.closed {
+  .content {
+    transform: scale(.1);
+  }
+}
+
+@keyframes opened {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

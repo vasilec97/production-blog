@@ -3,7 +3,7 @@
   min-height: var(--navbar-height);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 10px 30px;
   background-color: var(--inverted-bg-color);
 }

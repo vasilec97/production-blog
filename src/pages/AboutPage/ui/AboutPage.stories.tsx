@@ -1,8 +1,4 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Theme } from 'app/providers/ThemeProviders';
-import {
-  ThemeDecorator,
-} from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import AboutPage from './AboutPage';
 
 export default {
@@ -17,9 +13,5 @@ const Template: ComponentStory<typeof AboutPage> = (args) => (
   <AboutPage {...args} />
 );
 
-export const Light = Template.bind({});
-Light.args = {};
-
-export const Dark = Template.bind({});
-Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+export const Default = Template.bind({});
+Default.args = {};
