@@ -3,7 +3,7 @@
   height: var(--sidebar-height);
   width: var(--sidebar-width);
   background-color: var(--inverted-bg-color);
-  transition: width 0.2s ease;
+  transition: width .2s ease;
 }
 
 .switchers {
@@ -33,7 +33,7 @@ nav > ul {
 .item {
   display: flex;
   cursor: pointer;
-  transition: background-color 0.15s ease-in;
+  transition: background-color .15s ease-in;
 }
 
 .item:hover {
@@ -42,7 +42,7 @@ nav > ul {
 
 .item > a {
   flex-basis: 100%;
-  padding: 0.6em 1.2em;
+  padding: .6em 1.2em;
   display: flex;
   align-items: center;
   gap: 15px;
