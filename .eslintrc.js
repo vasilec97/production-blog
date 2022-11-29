@@ -69,7 +69,10 @@ module.exports = {
       },
     },
     {
-      files: ['./config/storybook/webpack.config.js'],
+      files: [
+        './config/storybook/webpack.config.js',
+        '**/src/**/slice/*.{ts,tsx}',
+      ],
       rules: {
         'no-param-reassign': 'off',
       },

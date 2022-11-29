@@ -1,3 +1,4 @@
+import { Counter } from 'entities/Counter/ui/Counter';
 import { useTranslation } from 'react-i18next';
 
 interface AboutPageProps {
@@ -8,7 +9,9 @@ const AboutPage = ({ className }: AboutPageProps) => {
   const { t } = useTranslation('about');
 
   return (
-    <div>{t('О нас')}</div>
+    <div>
+      {t('О нас')}
+    </div>
   );
 };
 
