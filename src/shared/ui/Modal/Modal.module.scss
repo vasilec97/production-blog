@@ -23,21 +23,24 @@
   transform: scale(1);
   opacity: 1;
   animation: opened .3s ease;
-  transition: transform .2s ease;
+  transition: all .3s ease;
 }
 
 .closed {
   .content {
-    transform: scale(.1);
+    transform: scale(.3);
+    opacity: 0;
   }
 }
 
 @keyframes opened {
   from {
+    opacity: .5;
     transform: scale(0);
   }
 
   to {
+    opacity: 1;
     transform: scale(1);
   }
 }

@@ -49,7 +49,7 @@ module.exports = {
       markupOnly: true,
       ignoreAttribute: ['data-testid', 'fallback', 'to'],
     }],
-    'max-len': [2, { ignoreComments: true }],
+    'max-len': [2, { code: 100, ignoreComments: true }],
     'linebreak-style': 'off',
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
